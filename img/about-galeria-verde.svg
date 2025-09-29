@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5f5f5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wallGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e0e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bdbdbd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shelfGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8d6e63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5d4037;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Pared trasera -->
+  <rect x="0" y="0" width="800" height="400" fill="url(#wallGradient)"/>
+  
+  <!-- Piso -->
+  <polygon points="0,400 800,400 800,600 0,600" fill="#f5f5f5"/>
+  
+  <!-- Estanterías -->
+  <rect x="50" y="100" width="200" height="15" fill="url(#shelfGradient)"/>
+  <rect x="50" y="200" width="200" height="15" fill="url(#shelfGradient)"/>
+  <rect x="50" y="300" width="200" height="15" fill="url(#shelfGradient)"/>
+  
+  <rect x="300" y="80" width="180" height="15" fill="url(#shelfGradient)"/>
+  <rect x="300" y="180" width="180" height="15" fill="url(#shelfGradient)"/>
+  <rect x="300" y="280" width="180" height="15" fill="url(#shelfGradient)"/>
+  
+  <rect x="520" y="120" width="160" height="15" fill="url(#shelfGradient)"/>
+  <rect x="520" y="220" width="160" height="15" fill="url(#shelfGradient)"/>
+  
+  <!-- Plantas en estanterías -->
+  <!-- Estantería izquierda superior -->
+  <g transform="translate(100,85)">
+    <ellipse cx="0" cy="20" rx="25" ry="8" fill="#8d6e63"/>
+    <rect x="-25" y="5" width="50" height="15" rx="3" fill="#a1887f"/>
+    <circle cx="0" cy="-10" r="15" fill="#4caf50"/>
+    <circle cx="0" cy="-10" r="10" fill="#81c784"/>
+  </g>
+  
+  <g transform="translate(180,85)">
+    <ellipse cx="0" cy="20" rx="20" ry="6" fill="#8d6e63"/>
+    <rect x="-20" y="8" width="40" height="12" rx="2" fill="#a1887f"/>
+    <path d="M0 -15 Q-10 -25 -15 -35 Q-10 -45 0 -40 Q10 -45 15 -35 Q10 -25 0 -15 Z" fill="#2e7d32"/>
+    <path d="M0 -10 Q8 -18 12 -28 Q8 -38 0 -33 Q-8 -38 -12 -28 Q-8 -18 0 -10 Z" fill="#2e7d32"/>
+  </g>
+  
+  <!-- Estantería izquierda media -->
+  <g transform="translate(120,185)">
+    <ellipse cx="0" cy="20" rx="30" ry="10" fill="#8d6e63"/>
+    <rect x="-30" y="2" width="60" height="18" rx="4" fill="#a1887f"/>
+    <!-- Monstera pequeña -->
+    <path d="M0 -20 Q-15 -30 -20 -45 Q-10 -55 5 -50 Q20 -55 25 -40 Q15 -25 0 -20 Z" fill="#4caf50"/>
+    <ellipse cx="-8" cy="-35" rx="3" ry="5" fill="#f5f5f5"/>
+    <ellipse cx="8" cy="-32" rx="2" ry="3" fill="#f5f5f5"/>
+  </g>
+  
+  <!-- Plantas del suelo -->
+  <g transform="translate(150,480)">
+    <ellipse cx="0" cy="40" rx="40" ry="15" fill="#8d6e63"/>
+    <rect x="-40" y="15" width="80" height="25" rx="5" fill="#a1887f"/>
+    <!-- Ficus grande -->
+    <ellipse cx="0" cy="-50" rx="25" ry="15" fill="#2e7d32"/>
+    <ellipse cx="-20" cy="-70" rx="20" ry="12" fill="#2e7d32"/>
+    <ellipse cx="20" cy="-65" rx="18" ry="10" fill="#2e7d32"/>
+    <ellipse cx="0" cy="-85" rx="22" ry="13" fill="#4caf50"/>
+    <rect x="-3" y="-10" width="6" height="50" fill="#8d6e63"/>
+  </g>
+  
+  <g transform="translate(450,500)">
+    <ellipse cx="0" cy="25" rx="35" ry="12" fill="#8d6e63"/>
+    <rect x="-35" y="8" width="70" height="17" rx="4" fill="#a1887f"/>
+    <!-- Planta con múltiples tallos -->
+    <rect x="-15" y="-40" width="4" height="48" fill="#2e7d32"/>
+    <rect x="-5" y="-35" width="4" height="43" fill="#2e7d32"/>
+    <rect x="5" y="-42" width="4" height="50" fill="#2e7d32"/>
+    <rect x="15" y="-38" width="4" height="46" fill="#2e7d32"/>
+    
+    <ellipse cx="-13" cy="-55" rx="12" ry="8" fill="#4caf50"/>
+    <ellipse cx="-3" cy="-48" rx="10" ry="6" fill="#4caf50"/>
+    <ellipse cx="7" cy="-58" rx="11" ry="7" fill="#4caf50"/>
+    <ellipse cx="17" cy="-52" rx="9" ry="5" fill="#4caf50"/>
+  </g>
+  
+  <!-- Estantería central -->
+  <g transform="translate(380,65)">
+    <ellipse cx="0" cy="20" rx="22" ry="7" fill="#8d6e63"/>
+    <rect x="-22" y="6" width="44" height="14" rx="3" fill="#a1887f"/>
+    <circle cx="0" cy="-5" r="12" fill="#81c784"/>
+    <circle cx="-8" cy="-12" r="8" fill="#4caf50"/>
+    <circle cx="8" cy="-10" r="6" fill="#66bb6a"/>
+  </g>
+  
+  <!-- Ventana con luz -->
+  <rect x="600" y="50" width="150" height="200" fill="#e3f2fd" opacity="0.6"/>
+  <rect x="605" y="55" width="140" height="190" fill="#ffffff" opacity="0.8"/>
+  <!-- Marco de ventana -->
+  <rect x="600" y="50" width="150" height="200" fill="none" stroke="#8d6e63" stroke-width="8"/>
+  <line x1="675" y1="50" x2="675" y2="250" stroke="#8d6e63" stroke-width="4"/>
+  <line x1="600" y1="150" x2="750" y2="150" stroke="#8d6e63" stroke-width="4"/>
+  
+  <!-- Sombras y profundidad -->
+  <ellipse cx="150" cy="520" rx="45" ry="10" fill="#000000" opacity="0.1"/>
+  <ellipse cx="450" cy="535" rx="40" ry="8" fill="#000000" opacity="0.1"/>
+  
+  <!-- Cartel decorativo -->
+  <rect x="20" y="20" width="120" height="40" fill="#2e7d32" rx="5"/>
+  <text x="80" y="35" font-family="Poppins, Arial, sans-serif" font-size="12" font-weight="600" 
+        fill="#ffffff" text-anchor="middle">GALERÍA</text>
+  <text x="80" y="50" font-family="Poppins, Arial, sans-serif" font-size="12" font-weight="600" 
+        fill="#ffffff" text-anchor="middle">VERDE</text>
+        
+  <!-- Elementos decorativos adicionales -->
+  <circle cx="700" cy="450" r="20" fill="#4caf50" opacity="0.3"/>
+  <circle cx="50" cy="500" r="15" fill="#81c784" opacity="0.4"/>
+  
+</svg>
