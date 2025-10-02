@@ -1,4 +1,4 @@
-# Galería Verde - Proyecto de Diseño Web
+# Galería Verde -- Proyecto de Diseño Web
 ## Defensa del Trabajo Práctico
 
 ---
