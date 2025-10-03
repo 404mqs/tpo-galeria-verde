@@ -1,326 +1,170 @@
-# Galería Verde - Proyecto de Diseño Web
-## Defensa del Trabajo Práctico
+# 🌱 Galería Verde - Trabajo Práctico Obligatorio
+
+**Sitio web informativo para local comercial de plantas y decoración**
+
+## 📋 Información del Proyecto
+
+**Local:** Galería Verde - Plantas y Decoración  
+**Ubicación:** Local 15, Galería Central, Av. Corrientes 1234  
+**Público objetivo:** Personas interesadas en plantas de interior y decoración natural  
+**Tipo de negocio:** Venta de plantas, suculentas y elementos decorativos  
 
 ---
 
-## 📋 **RESUMEN EJECUTIVO**
-**Galería Verde** es un sitio web informativo y responsivo desarrollado para un local ficticio de plantas y decoración. El proyecto demuestra el dominio de HTML5 semántico, CSS3 avanzado, y principios de diseño responsivo sin uso de frameworks externos.
+## 🎯 Estructura del Sitio
 
-**Tiempo de desarrollo estimado:** 8-12 horas  
-**Tecnologías principales:** HTML5, CSS3, Flexbox, Grid, Media Queries  
-**Compatibilidad:** Todos los navegadores modernos y dispositivos
+### Secciones Implementadas
+1. **Inicio** - Presentación del local con banner destacado
+2. **Nosotros** - Historia y propuesta del local dentro de la galería  
+3. **Productos** - Catálogo con 3 productos principales
+4. **Contacto** - Información completa: dirección, teléfono, email, redes sociales y mapa
 
----
-
-## 🎯 **OBJETIVOS CUMPLIDOS**
-
-### ✅ Técnicos
-- [x] HTML5 semántico completo
-- [x] CSS3 puro sin frameworks
-- [x] Diseño 100% responsivo 
-- [x] Layout con Flexbox
-- [x] Paleta de colores específica
-- [x] Tipografía Google Fonts
-- [x] Navegación suave
-- [x] Optimización móvil
-
-### ✅ Contenido
-- [x] Identidad visual coherente
-- [x] 4 secciones principales
-- [x] Información de contacto completa
-- [x] Catálogo de productos
-- [x] Mapa embebido
-- [x] Redes sociales
+### Navegación
+- Menú fijo superior con navegación suave
+- Enlaces internos con scroll automático
+- Menú hamburguesa para dispositivos móviles
 
 ---
 
-## 🏗️ **ARQUITECTURA DEL PROYECTO**
+## 🎨 Identidad Visual
 
-### Estructura de Archivos
+### Logo y Marca
+- **Nombre:** Galería Verde
+- **Logo:** Diseño personalizado en formato SVG con hoja estilizada
+
+### Paleta de Colores
+- **Verde principal:** `#2e7d32` (naturaleza, frescura)
+- **Verde oscuro:** `#1b5e20` (elegancia, confianza)  
+- **Blanco:** `#ffffff` (limpieza, minimalismo)
+- **Gris claro:** `#f5f5f5` (neutralidad, contraste)
+
+### Tipografía
+- **Fuente principal:** Poppins (Google Fonts)
+- **Pesos utilizados:** 300, 400, 500, 600, 700
+- **Características:** Moderna, legible, profesional
+
+---
+
+## 💻 Aspectos Técnicos
+
+### Tecnologías Utilizadas
+- **HTML5** semántico con elementos `<header>`, `<nav>`, `<section>`, `<footer>`
+- **CSS3** puro sin frameworks externos
+- **Flexbox** para el layout y distribución de elementos
+- **CSS Grid** para la grilla de productos
+- **Media Queries** para diseño responsivo
+
+### Características del Diseño
+- ✅ **Responsivo:** Adaptación automática a móvil, tablet y desktop
+- ✅ **Semántico:** HTML estructurado para SEO y accesibilidad  
+- ✅ **Performance:** Imágenes SVG optimizadas
+- ✅ **Interactivo:** Efectos hover y transiciones suaves
+- ✅ **Navegación:** Scroll suave y menú sticky
+
+### Breakpoints Responsivos
+- **Desktop:** > 768px
+- **Tablet:** 481px - 768px  
+- **Mobile:** ≤ 480px
+
+---
+
+## 📁 Estructura de Archivos
 ```
 tpo-dweb/
-├── index.html                    # Página principal (documento único)
-├── style.css                     # Estilos completos
-├── README.md                     # Documentación técnica
-└── img/                         # Assets visuales
-    ├── logo-galeria-verde.svg    # Logo corporativo
-    ├── banner-plantas.svg        # Hero image
-    ├── about-galeria-verde.svg   # Imagen institucional  
+├── index.html                    # Página principal
+├── style.css                     # Estilos CSS
+├── README.md                     # Documentación del proyecto
+└── img/                         # Imágenes y recursos
+    ├── logo-galeria-verde.svg    # Logo del local
+    ├── banner-plantas.svg        # Banner principal
+    ├── about-galeria-verde.svg   # Imagen "nosotros"
     ├── monstera-deliciosa.svg    # Producto 1
     ├── suculentas-mix.svg        # Producto 2
     └── ficus-lyrata.svg          # Producto 3
 ```
 
-### Decisiones de Arquitectura
-1. **SPA (Single Page Application)**: Una sola página HTML para mejor performance
-2. **CSS modular**: Variables CSS para mantenibilidad
-3. **Mobile-first**: Desarrollo responsive desde dispositivos pequeños
-4. **Semantic HTML**: Estructura accesible y SEO-friendly
+---
+
+## 🛠️ Justificación del Diseño
+
+### ¿Por qué estos colores?
+- **Verde (#2e7d32):** Representa la naturaleza y crecimiento de las plantas
+- **Verde oscuro (#1b5e20):** Aporta elegancia y confianza al negocio  
+- **Blanco y grises:** Crean un ambiente limpio y minimalista que resalta las plantas
+
+### ¿Por qué Poppins?
+- Tipografía moderna y legible en todos los dispositivos
+- Transmite profesionalismo y cercanía
+- Excelente legibilidad para información de productos
+
+### ¿Por qué este estilo?
+- **Minimalista:** Las plantas son las protagonistas
+- **Natural:** Colores y formas que evocan la naturaleza
+- **Profesional:** Genera confianza para compras online
 
 ---
 
-## 🎨 **DECISIONES DE DISEÑO**
+## 📱 Diseño Responsivo
 
-### Identidad Visual
-- **Nombre:** "Galería Verde" - evoca naturaleza y espacio comercial
-- **Colores primarios:** 
-  - Verde principal: `#2e7d32` (confianza, naturaleza)
-  - Verde oscuro: `#1b5e20` (elegancia, profundidad)
-  - Blanco: `#ffffff` (limpieza, minimalismo)
-  - Gris claro: `#f5f5f5` (neutralidad, contraste sutil)
+El sitio se adapta a tres breakpoints principales:
 
-### Tipografía Estratégica
-- **Poppins**: Moderna, legible, profesional
-- **Pesos utilizados**: 300, 400, 500, 600, 700
-- **Jerarquía clara**: H1 (logo) → H2 (secciones) → H3 (subsecciones)
+### 💻 Desktop (> 768px)
+- Layout completo con sidebar de navegación
+- Imágenes grandes para mostrar detalle de productos
+- Grid de 3 columnas para productos
 
-### Layout y UX
-- **Navegación fija**: Header sticky para acceso rápido
-- **Scroll suave**: Mejora la experiencia de navegación
-- **Cards de productos**: Hover effects para interactividad
-- **CTA prominente**: "Ver Productos" en hero section
+### 📱 Tablet (481-768px)  
+- Layout adaptado con elementos más compactos
+- Grid de 2 columnas para productos
+- Menú colapsado
 
----
-
-## 💻 **IMPLEMENTACIÓN TÉCNICA**
-
-### HTML5 Semántico
-```html
-<!DOCTYPE html>
-<html lang="es">                 <!-- Idioma definido -->
-  <header>                       <!-- Cabecera del sitio -->
-    <nav>                        <!-- Navegación principal -->
-  <main>                         <!-- Contenido principal -->
-    <section id="inicio">        <!-- Secciones identificadas -->
-    <section id="nosotros">
-    <section id="productos">
-    <section id="contacto">
-  <footer>                       <!-- Pie de página -->
-```
-
-**Ventajas del HTML semántico:**
-- Mejor SEO (Google entiende la estructura)
-- Accesibilidad mejorada (lectores de pantalla)
-- Código más mantenible y legible
-- Cumple estándares W3C
-
-### CSS3 Avanzado
-
-#### Variables CSS (Custom Properties)
-```css
-:root {
-    --verde-primario: #2e7d32;
-    --verde-oscuro: #1b5e20;
-    --blanco: #ffffff;
-    --gris-claro: #f5f5f5;
-}
-```
-**Beneficio:** Fácil mantenimiento y cambios globales
-
-#### Flexbox Strategic Usage
-```css
-/* Header responsive */
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Hero section */
-.hero {
-    display: flex;
-    align-items: center;
-}
-```
-
-#### CSS Grid para Productos
-```css
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-```
-
-### Responsive Design Strategy
-
-#### Breakpoints Estratégicos
-- **Desktop:** > 768px (layout completo)
-- **Tablet:** 481px - 768px (layout adaptado)  
-- **Mobile:** ≤ 480px (stack vertical, menú hamburguesa)
-
-#### Media Queries Implementadas
-```css
-/* Tablet */
-@media (max-width: 768px) {
-    .hero { flex-direction: column; }
-    .nav-list { display: none; }
-    .nav-toggle { display: flex; }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-    .hero-title { font-size: 1.8rem; }
-    .products-grid { grid-template-columns: 1fr; }
-}
-```
+### 📱 Mobile (≤ 480px)
+- Stack vertical de todos los elementos
+- Menú hamburguesa
+- Grid de 1 columna para productos
+- Botones touch-friendly (44px mínimo)
 
 ---
 
-## 🔧 **CARACTERÍSTICAS TÉCNICAS DESTACADAS**
+## 🚀 Instrucciones para GitHub Pages
 
-### 1. **Performance Optimizada**
-- CSS minimalista (sin frameworks pesados)
-- Imágenes SVG (escalables, pequeñas)
-- Una sola hoja de estilos
-- JavaScript mínimo (solo navegación)
+### 1. Crear repositorio
+1. Ve a GitHub.com e inicia sesión
+2. Clic en "New repository"
+3. Nombre: `tpo-galeria-verde`
+4. Marcar como público
+5. Crear repositorio
 
-### 2. **Accesibilidad (WCAG)**
-- Contraste adecuado de colores
-- Textos alternativos en imágenes  
-- Navegación por teclado
-- Estructura semántica clara
-- `aria-label` en botones
+### 2. Subir archivos
+Arrastra todos los archivos del proyecto al repositorio
 
-### 3. **SEO Optimizado**
-- Meta viewport para móviles
-- Títulos jerárquicos (H1, H2, H3)
-- Contenido relevante y estructurado
-- URLs con anclas (#inicio, #nosotros)
+### 3. Activar GitHub Pages
+1. Ve a Settings → Pages
+2. Source: "Deploy from a branch"
+3. Branch: "main"
+4. Folder: "/ (root)"
+5. Save
 
-### 4. **Cross-Browser Compatibility**
-- Prefijos vendor cuando necesario
-- Fallbacks para propiedades CSS
-- Tested en: Chrome, Firefox, Safari, Edge
+### 4. URL final
+`https://tu-usuario.github.io/tpo-galeria-verde`
 
 ---
 
-## 📱 **ESTRATEGIA MOBILE-FIRST**
+## ✅ Requisitos Cumplidos
 
-### Enfoque Progresivo
-1. **Base móvil** (320px+): Layout vertical, navegación simple
-2. **Tablet enhancement** (768px+): Layout híbrido
-3. **Desktop enhancement** (1024px+): Layout completo
-
-### Navegación Móvil
-- Menú hamburguesa con animación CSS
-- Touch-friendly (botones 44px mínimo)
-- Scroll vertical optimizado
-- CTA buttons prominentes
+- [x] **Identidad visual:** Logo, colores y tipografía definidos
+- [x] **Estructura completa:** Inicio, Nosotros, Productos, Contacto
+- [x] **HTML5 y CSS3:** Código semántico y moderno
+- [x] **Flexbox:** Layout responsive implementado
+- [x] **Diseño responsivo:** Adaptación móvil, tablet y desktop
+- [x] **Información de contacto:** Dirección, teléfono, email, redes
+- [x] **Mapa embebido:** Google Maps integrado
 
 ---
 
-## 🎯 **PUNTOS CLAVE PARA LA DEFENSA**
-
-### 1. **¿Por qué estas tecnologías?**
-- **HTML5 semántico**: Estructura clara, SEO, accesibilidad
-- **CSS3 puro**: Control total, performance, aprendizaje profundo
-- **Flexbox**: Layout moderno, responsive natural
-- **Sin frameworks**: Demuestra conocimiento fundamental
-
-### 2. **¿Cómo garantizas la responsividad?**
-- Mobile-first approach
-- Flexbox para layouts flexibles
-- CSS Grid para contenido estructurado  
-- Media queries estratégicas
-- Unidades relativas (rem, %, vw/vh)
-
-### 3. **¿Qué hace único este proyecto?**
-- Identidad visual cohesiva
-- UX cuidadosamente diseñada
-- Código limpio y bien estructurado
-- Performance optimizada
-- Escalabilidad futura
-
-### 4. **¿Cómo mejorarias el proyecto?**
-- Agregar animaciones CSS avanzadas
-- Implementar lazy loading para imágenes
-- Añadir PWA capabilities
-- Integrar sistema de gestión de contenido
-- Optimizar Core Web Vitals
-
----
-
-## 🚀 **DEPLOYMENT Y TESTING**
-
-### GitHub Pages Setup
-1. Repository público
-2. Branch main como source
-3. URL: `https://usuario.github.io/proyecto-name`
-4. SSL automático (HTTPS)
-
-### Testing Realizado
-- **Responsive**: Chrome DevTools, diferentes resoluciones
-- **Cross-browser**: Chrome, Firefox, Safari, Edge  
-- **Performance**: PageSpeed Insights
-- **Accesibilidad**: WAVE, Lighthouse
-- **Validación**: W3C HTML/CSS Validators
-
----
-
-## 📊 **MÉTRICAS Y RESULTADOS**
-
-### Performance Estimado
-- **First Contentful Paint**: < 1.5s
-- **Largest Contentful Paint**: < 2.5s  
-- **Cumulative Layout Shift**: < 0.1
-- **Time to Interactive**: < 3s
-
-### Accesibilidad Score
-- **Lighthouse Accessibility**: 95%+
-- **Contrast Ratio**: AAA compliant
-- **Keyboard Navigation**: 100% funcional
-
----
-
-## 🎓 **APRENDIZAJES Y CONCLUSIONES**
-
-### Tecnológicos
-- Dominio de Flexbox y Grid Layout
-- Media queries estratégicas
-- HTML semántico aplicado
-- CSS variables y metodología BEM
-- Performance optimization techniques
-
-### Metodológicos  
-- Mobile-first development
-- Progressive enhancement
-- Component-based thinking
-- User-centered design
-- Cross-browser testing
-
-### Profesionales
-- Planificación y estructura de proyecto
-- Documentación técnica
-- Git workflow básico
-- Deployment automatizado
-- Responsive design patterns
-
----
-
-## 📝 **PREGUNTAS FRECUENTES DE DEFENSA**
-
-**Q: ¿Por qué no usaste Bootstrap o similar?**  
-A: Para demostrar conocimiento fundamental de CSS, mejor performance y control total sobre el código.
-
-**Q: ¿Cómo garantizas que funcione en móviles?**  
-A: Desarrollo mobile-first, testing en múltiples dispositivos, media queries estratégicas.
-
-**Q: ¿Qué harías diferente en un proyecto real?**  
-A: Añadiría sistema de build, preprocessing CSS, testing automatizado, CMS integration.
-
-**Q: ¿Cómo mediste la accesibilidad?**  
-A: Tools como Lighthouse, WAVE, testing manual con teclado, verificación de contraste.
-
-**Q: ¿El código es escalable?**  
-A: Sí, mediante CSS variables, estructura modular, naming conventions claras.
-
----
-
-**Proyecto desarrollado por:** [Tu Nombre]  
-**Fecha:** Septiembre 2024  
-**Tiempo total:** 12 horas  
-**Tecnologías:** HTML5, CSS3, Google Fonts, GitHub Pages
+**Desarrollado para:** Trabajo Práctico Obligatorio - Diseño Web  
+**Fecha:** Octubre 2025  
+**Tecnologías:** HTML5, CSS3, Flexbox
 
 ## Imágenes Requeridas
 Para completar el proyecto, necesitarás añadir las siguientes imágenes en la carpeta `img/`:
