@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌱 Galería Verde - Trabajo Práctico Obligatorio
 
 **Sitio web informativo para local comercial de plantas y decoración**
@@ -9,10 +8,6 @@
 **Ubicación:** Local 15, Galería Central, Av. Corrientes 1234  
 **Público objetivo:** Personas interesadas en plantas de interior y decoración natural  
 **Tipo de negocio:** Venta de plantas, suculentas y elementos decorativos  
-=======
-# Galería Verde -- Proyecto de Diseño Web
-## Defensa del Trabajo Práctico
->>>>>>> 2a396053ab3dbd8cafdafe8fcb50f97ce76ebcda
 
 ---
 
