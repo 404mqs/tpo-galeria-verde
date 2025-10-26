@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Galeria Verde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=80&h=80&fit=crop" alt="Galeria Verde Logo" class="logo-img">
+                <h1 class="logo-text">Galeria Verde</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="nosotros" class="about">
+            <div class="container">
+                <h2 class="section-title">Nuestra Historia</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            Galeria Verde nacio en 2020 con la mision de acercar la naturaleza a los espacios urbanos.
+                            Ubicados en el primer piso de la Galeria Central, nos especializamos en plantas de interior,
+                            suculentas, y elementos decorativos que transforman cualquier ambiente en un refugio verde.
+                        </p>
+                        <p class="about-description">
+                            Creemos que cada hogar y oficina merece un toque de naturaleza. Por eso, seleccionamos
+                            cuidadosamente cada planta y ofrecemos asesoramiento personalizado para que puedas
+                            crear tu propio jardin interior, sin importar tu experiencia previa.
+                        </p>
+                        <p class="about-description">
+                            Nuestro equipo esta formado por apasionados de las plantas con anos de experiencia en
+                            jardineria y decoracion. Nos enorgullece brindar un servicio personalizado y ayudar a
+                            cada cliente a encontrar la planta perfecta para su espacio y estilo de vida.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&h=800&fit=crop" alt="Interior de Galeria Verde">
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 60px;">Nuestros Valores</h2>
+                <div class="about-features">
+                    <div class="feature">
+                        <h3 class="feature-title">Plantas saludables</h3>
+                        <p>Cada planta es seleccionada y cuidada por expertos para garantizar que llegue a tu hogar en perfectas condiciones</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-title">Asesoramiento gratuito</h3>
+                        <p>Te ayudamos a elegir la planta ideal segun tu espacio, luz disponible y nivel de experiencia</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-title">Entrega a domicilio</h3>
+                        <p>Servicio de entrega sin costo en zona centro de Buenos Aires para tu comodidad</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-title">Sostenibilidad</h3>
+                        <p>Trabajamos con proveedores responsables y utilizamos materiales eco-friendly en nuestros empaques</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-title">Garantia de calidad</h3>
+                        <p>Todas nuestras plantas cuentan con garantia y soporte post-venta para asegurar su bienestar</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-title">Comunidad verde</h3>
+                        <p>Organizamos talleres y eventos para compartir conocimientos y fomentar el amor por las plantas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">Galeria Verde</h3>
+                    <p class="footer-description">Tu oasis de plantas y decoracion natural</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rapidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>Telefono: +54 11 3456-7890</p>
+                    <p>Email: info@galeriaverde.com.ar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Galeria Verde. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

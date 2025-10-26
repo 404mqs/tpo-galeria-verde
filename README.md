@@ -13,16 +13,17 @@
 
 ## 🎯 Estructura del Sitio
 
-### Secciones Implementadas
-1. **Inicio** - Presentación del local con banner destacado
-2. **Nosotros** - Historia y propuesta del local dentro de la galería  
-3. **Productos** - Catálogo con 3 productos principales
-4. **Contacto** - Información completa: dirección, teléfono, email, redes sociales y mapa
+### Páginas Implementadas
+1. **index.html (Inicio)** - Página principal con bienvenida y características destacadas
+2. **nosotros.html (Nosotros)** - Historia completa y valores del local dentro de la galería
+3. **productos.html (Productos)** - Catálogo completo con 9 productos variados
+4. **contacto.html (Contacto)** - Información completa: dirección, teléfono, email, redes sociales y mapa integrado
 
 ### Navegación
-- Menú fijo superior con navegación suave
-- Enlaces internos con scroll automático
+- Menú fijo superior con enlaces entre páginas
+- Sistema de navegación multipágina (no single page)
 - Menú hamburguesa para dispositivos móviles
+- Footer con enlaces rápidos en todas las páginas
 
 ---
 
@@ -30,7 +31,7 @@
 
 ### Logo y Marca
 - **Nombre:** Galería Verde
-- **Logo:** Diseño personalizado en formato SVG con hoja estilizada
+- **Logo:** Imagen circular de planta natural que representa el negocio
 
 ### Paleta de Colores
 - **Verde principal:** `#2e7d32` (naturaleza, frescura)
@@ -56,10 +57,11 @@
 
 ### Características del Diseño
 - ✅ **Responsivo:** Adaptación automática a móvil, tablet y desktop
-- ✅ **Semántico:** HTML estructurado para SEO y accesibilidad  
-- ✅ **Performance:** Imágenes SVG optimizadas
+- ✅ **Semántico:** HTML estructurado para SEO y accesibilidad
+- ✅ **Performance:** Imágenes optimizadas desde Unsplash
 - ✅ **Interactivo:** Efectos hover y transiciones suaves
-- ✅ **Navegación:** Scroll suave y menú sticky
+- ✅ **Navegación:** Menú sticky con navegación multipágina
+- ✅ **Imágenes reales:** Fotografías profesionales de plantas y productos
 
 ### Breakpoints Responsivos
 - **Desktop:** > 768px
@@ -71,17 +73,15 @@
 ## 📁 Estructura de Archivos
 ```
 tpo-dweb/
-├── index.html                    # Página principal
-├── style.css                     # Estilos CSS
-├── README.md                     # Documentación del proyecto
-└── img/                         # Imágenes y recursos
-    ├── logo-galeria-verde.svg    # Logo del local
-    ├── banner-plantas.svg        # Banner principal
-    ├── about-galeria-verde.svg   # Imagen "nosotros"
-    ├── monstera-deliciosa.svg    # Producto 1
-    ├── suculentas-mix.svg        # Producto 2
-    └── ficus-lyrata.svg          # Producto 3
+├── index.html        # Página de inicio
+├── nosotros.html     # Página "Nosotros"
+├── productos.html    # Catálogo de productos
+├── contacto.html     # Información de contacto
+├── style.css         # Estilos CSS
+└── README.md         # Documentación del proyecto
 ```
+
+**Nota:** Las imágenes se cargan desde Unsplash para mayor profesionalismo y calidad.
 
 ---
 
