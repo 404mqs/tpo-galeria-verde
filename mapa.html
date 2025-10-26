@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Galer&#xed;a Verde","children":[{"content":"INICIO","children":[{"content":"Hero Banner","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"Call-to-action","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"Imagen destacada","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"Por qu&#xe9; elegirnos","children":[],"payload":{"tag":"li","lines":"6,8"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"NOSOTROS","children":[{"content":"Historia","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"Misi&#xf3;n","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"Equipo","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"Nuestros valores","children":[{"content":"Plantas saludables","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"Asesoramiento gratuito","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"Entrega zona centro","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"Sostenibilidad","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Garant&#xed;a","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"Comunidad verde","children":[],"payload":{"tag":"li","lines":"18,19"}}],"payload":{"tag":"li","lines":"12,19"}},{"content":"Imagen del local","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"PRODUCTOS","children":[{"content":"Cat&#xe1;logo","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"Im&#xe1;genes reales","children":[],"payload":{"tag":"li","lines":"23,25"}}],"payload":{"tag":"h2","lines":"21,22"}},{"content":"PROMOCIONES","children":[{"content":"Tarjetas informativas","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"Calculadora interactiva","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"Resultados din&#xe1;micos","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"JavaScript (promociones.js)","children":[],"payload":{"tag":"li","lines":"29,31"}}],"payload":{"tag":"h2","lines":"25,26"}},{"content":"CONTACTO","children":[{"content":"Ubicaci&#xf3;n y horarios","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"Mapa embebido","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"Redes sociales","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"Consultas","children":[],"payload":{"tag":"li","lines":"35,36"}}],"payload":{"tag":"h2","lines":"31,32"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

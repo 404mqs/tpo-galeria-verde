@@ -116,16 +116,19 @@ main {
 .hero {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 60px;
     min-height: 70vh;
-    padding: 60px 0;
+    padding: 60px 20px;
     background: linear-gradient(135deg, var(--gris-claro) 0%, var(--blanco) 100%);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .hero-content {
     flex: 1;
-    padding: 0 20px;
     max-width: 600px;
-    margin: 0 auto;
+    text-align: left;
 }
 
 .hero-title {
@@ -140,6 +143,7 @@ main {
     font-size: 1.2rem;
     color: var(--gris-texto);
     margin-bottom: 30px;
+    line-height: 1.6;
 }
 
 .cta-button {
@@ -160,12 +164,11 @@ main {
 
 .hero-image {
     flex: 1;
-    text-align: center;
-    padding: 0 20px;
+    max-width: 600px;
 }
 
 .hero-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 30px var(--sombra);
