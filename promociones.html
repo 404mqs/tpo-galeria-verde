@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones - Galeria Verde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=80&h=80&fit=crop" alt="Galeria Verde Logo" class="logo-img">
+                <h1 class="logo-text">Galeria Verde</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="promociones.html" class="nav-link">Promociones</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="promociones-section">
+            <div class="container">
+                <h2 class="section-title">Promociones Especiales</h2>
+                <p class="promociones-intro">
+                    Aprovecha nuestras ofertas especiales y lleva mas plantas por menos dinero.
+                    Selecciona tus productos y descubre cuanto podes ahorrar!
+                </p>
+
+                <!-- Promociones Disponibles -->
+                <div class="promociones-grid">
+                    <div class="promo-card">
+                        <div class="promo-badge">Promo 1</div>
+                        <h3 class="promo-title">2x1 con 50% OFF</h3>
+                        <p class="promo-description">
+                            Lleva 2 productos y obtene 50% de descuento en el segundo producto de menor precio.
+                        </p>
+                    </div>
+
+                    <div class="promo-card">
+                        <div class="promo-badge">Promo 2</div>
+                        <h3 class="promo-title">3x2 Especial</h3>
+                        <p class="promo-description">
+                            En productos seleccionados, lleva 3 y paga solo 2. El de menor precio sale gratis!
+                        </p>
+                    </div>
+
+                    <div class="promo-card">
+                        <div class="promo-badge">Promo 3</div>
+                        <h3 class="promo-title">Descuento por Volumen</h3>
+                        <p class="promo-description">
+                            10% de descuento en compras superiores a $30,000. Ideal para decorar espacios grandes!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Calculadora de Promociones -->
+                <div class="calculadora-container">
+                    <h3 class="calculadora-title">Calcula tu Ahorro</h3>
+                    <p class="calculadora-subtitle">Selecciona productos y cantidades para ver cuanto ahorras</p>
+
+                    <form id="promocionesForm" class="promociones-form">
+                        <!-- Selector de Promoción -->
+                        <div class="form-group">
+                            <label for="tipoPromo" class="form-label">Selecciona la Promocion:</label>
+                            <select id="tipoPromo" name="tipoPromo" class="form-control" required>
+                                <option value="">-- Elegir promocion --</option>
+                                <option value="2x1">2x1 con 50% OFF en el segundo</option>
+                                <option value="3x2">3x2 en productos seleccionados</option>
+                                <option value="volumen">10% OFF en compras sobre $30,000</option>
+                            </select>
+                        </div>
+
+                        <!-- Productos Disponibles -->
+                        <div class="productos-container" id="productosContainer">
+                            <h4 class="productos-subtitle">Agregar Productos:</h4>
+
+                            <div class="producto-item">
+                                <div class="producto-info">
+                                    <label class="producto-label">
+                                        <input type="checkbox" name="producto" value="monstera" data-precio="3500" class="producto-checkbox">
+                                        Monstera Deliciosa - $3,500
+                                    </label>
+                                </div>
+                                <div class="producto-cantidad">
+                                    <label for="cant-monstera">Cantidad:</label>
+                                    <input type="number" id="cant-monstera" name="cant-monstera" min="0" value="0" class="cantidad-input" disabled>
+                                </div>
+                            </div>
+
+                            <div class="producto-item">
+                                <div class="producto-info">
+                                    <label class="producto-label">
+                                        <input type="checkbox" name="producto" value="suculentas" data-precio="2800" class="producto-checkbox">
+                                        Set de Suculentas - $2,800
+                                    </label>
+                                </div>
+                                <div class="producto-cantidad">
+                                    <label for="cant-suculentas">Cantidad:</label>
+                                    <input type="number" id="cant-suculentas" name="cant-suculentas" min="0" value="0" class="cantidad-input" disabled>
+                                </div>
+                            </div>
+
+                            <div class="producto-item">
+                                <div class="producto-info">
+                                    <label class="producto-label">
+                                        <input type="checkbox" name="producto" value="ficus" data-precio="4200" class="producto-checkbox">
+                                        Ficus Lyrata - $4,200
+                                    </label>
+                                </div>
+                                <div class="producto-cantidad">
+                                    <label for="cant-ficus">Cantidad:</label>
+                                    <input type="number" id="cant-ficus" name="cant-ficus" min="0" value="0" class="cantidad-input" disabled>
+                                </div>
+                            </div>
+
+                            <div class="producto-item">
+                                <div class="producto-info">
+                                    <label class="producto-label">
+                                        <input type="checkbox" name="producto" value="pothos" data-precio="2200" class="producto-checkbox">
+                                        Pothos Dorado - $2,200
+                                    </label>
+                                </div>
+                                <div class="producto-cantidad">
+                                    <label for="cant-pothos">Cantidad:</label>
+                                    <input type="number" id="cant-pothos" name="cant-pothos" min="0" value="0" class="cantidad-input" disabled>
+                                </div>
+                            </div>
+
+                            <div class="producto-item">
+                                <div class="producto-info">
+                                    <label class="producto-label">
+                                        <input type="checkbox" name="producto" value="sansevieria" data-precio="2900" class="producto-checkbox">
+                                        Sansevieria - $2,900
+                                    </label>
+                                </div>
+                                <div class="producto-cantidad">
+                                    <label for="cant-sansevieria">Cantidad:</label>
+                                    <input type="number" id="cant-sansevieria" name="cant-sansevieria" min="0" value="0" class="cantidad-input" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-calcular">Calcular Ahorro</button>
+                            <button type="button" id="btnLimpiar" class="btn-limpiar">Limpiar</button>
+                        </div>
+                    </form>
+
+                    <!-- Resultados -->
+                    <div id="resultados" class="resultados-container" style="display: none;">
+                        <h4 class="resultados-title">Resumen de tu Compra</h4>
+                        <div class="resultado-detalle">
+                            <div class="resultado-item">
+                                <span class="resultado-label">Subtotal sin descuento:</span>
+                                <span class="resultado-valor" id="subtotal">$0</span>
+                            </div>
+                            <div class="resultado-item descuento-item">
+                                <span class="resultado-label">Descuento aplicado:</span>
+                                <span class="resultado-valor resultado-descuento" id="descuento">-$0</span>
+                            </div>
+                            <div class="resultado-item total-item">
+                                <span class="resultado-label">Total a pagar:</span>
+                                <span class="resultado-valor resultado-total" id="total">$0</span>
+                            </div>
+                            <div class="resultado-ahorro">
+                                <p id="mensajeAhorro"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">Galeria Verde</h3>
+                    <p class="footer-description">Tu oasis de plantas y decoracion natural</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rapidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="promociones.html">Promociones</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>Telefono: +54 11 3456-7890</p>
+                    <p>Email: info@galeriaverde.com.ar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Galeria Verde. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="promociones.js"></script>
+</body>
+</html>
